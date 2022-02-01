@@ -53,6 +53,8 @@ font-family: Secular One;
     font-family: secular One;
     font-size: 80px;
     line-height: 116px;
+  -webkit-text-stroke: 0.1vh var(--white);
+    color: var(--default-purple);
 }
 
 .hook-sub__title {
@@ -78,8 +80,8 @@ font-family: Secular One;
 }
 
 .section-one__btn:hover {
-    background: var(--white);
-    color: var(--default-purple);
+    box-shadow: 5px 5px var(--white);
+    border: none;
 }
 .section-one__img {
     position: absolute;
