@@ -1,3 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+}
+body {
+   min-height: 100vh; 
+}
+
+header {
+    height: 100vh;
+}
+
+h1 {
+    font-size: clamp(32px, 16px + 6vw ,80px);
+    line-height: .8em;
+}
+
+.color-text {
+    color: rgb(209, 140, 114); 
+}
+/* navbar */
+
+.top-nav {
+    padding: 2rem;
+    flex-wrap: wrap;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-ul {
+    display: flex;
+    list-style-type: none;
+    gap: 4rem;
+    padding: 0 4rem;
+}
+
+.nav-ul a {
+    text-decoration: none;
+    color: rgb(81, 78, 78);
+    font-weight: bold;
+}
+
+/* hamburger-mobile responsive navbar */
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    display: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+/* hero-setion */
+.hero__content {
+    margin: 0 auto;
+    padding: 2rem;
+    /* max-width: 500px; */
+    line-height: 2rem;
+    font-size: 20px;
+}
+.hero__btn, .about__btn {
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin: 2rem 0 0;
+    background-color: #FFA263;
+    color: #fff;
+}
+
+.hero__img {
+    border: 0;
+    max-width: 450px;
+    margin: auto;
+}
+
+.hero__img-item {
+    width: 100%;
+    height: auto;
+    font-size: 0;
+}
+
+/* about */
+
+.about {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.about__des {
+    padding: 1rem 0;
+}
+
+/* work */
+.work {
+    text-align: center;
+}
+
+.work__content {
+    padding: 1rem;
+}
+.work__container {
+    /* max-width: 450px; */
+    text-align: center;
+    margin: auto;
+}
+@media screen and (min-width: 845px) {
+
+    .hero{
+        padding: 2rem;
+    }
+    .hero__content, .hero__btn {
+        margin: 3rem 0;
+    }
+    
+    .hero__content, .about, .work__container {
+        max-width: 800px;
+    }
+
+    /* hero-section */
+    .hero, .work__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* about-section */
+    .about, .work__container {
+        margin: 5rem auto;
+    }
+    /* work__container */
+}
+
+
+@media screen and (max-width: 720px){
+
+    h1 {
+        line-height: 3rem;
+        resize: none;
+    }
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .hamburger {
+        display: block;
+        
+    }
+    .nav-ul.show {
+        display: flex;
+        margin: 2rem 0;
+        line-height: 0;
+    }
+
+    /* hero-section */
+    /* max-width */
+    .hero__content, .hero__btn{
+        margin: 5rem 0;
+    }
+
+    .hero__content, .about, .work__container {
+        max-width: 500px;
+    }
+    .hero__img {
+        display: none;
+    }
+}
+
+
+/* old
 @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Libre+Baskerville&family=Outfit:wght@700&family=Secular+One&display=swap');
 
 :root {
@@ -90,3 +269,4 @@ height: 828px;
 left: 722px;
 top: 196px;
 }
+*/
