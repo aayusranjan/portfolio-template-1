@@ -7,11 +7,7 @@ html{
     font-size: 100%;
 }
 body {
-   min-height: 100vh; 
-}
-
-header {
-    height: 100vh;
+    height: 100vh; 
 }
 
 h1 {
@@ -60,10 +56,13 @@ h1 {
 }
 
 /* hero-setion */
+.hero {
+    background: rgb(171, 64, 64)
+}
+
 .hero__content {
     margin: 0 auto;
     padding: 2rem;
-    /* max-width: 500px; */
     line-height: 2rem;
     font-size: 20px;
 }
@@ -89,11 +88,20 @@ h1 {
 }
 
 /* about */
+.main{
+    background: red;
+}
+
+.about__section {
+    background: #fff;
+    height: 100vh;
+}
 
 .about {
+    border: 2px solid red;
     text-align: center;
-    margin: 0 auto;
     padding: 1rem;
+    
 }
 
 .about__des {
@@ -163,7 +171,11 @@ h1 {
 
     /* hero-section */
     /* max-width */
-    .hero__content, .hero__btn{
+    .hero__content {
+        padding: 5rem 0;
+    }
+
+    .hero__btn {
         margin: 5rem 0;
     }
 
@@ -174,99 +186,3 @@ h1 {
         display: none;
     }
 }
-
-
-/* old
-@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Libre+Baskerville&family=Outfit:wght@700&family=Secular+One&display=swap');
-
-:root {
-  --default-purple: #24072f;
-  --white: #fff;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-position: relative;
-width: 1440px;
-height: 1024px;
-background: var(--default-purple);
-font-family: Secular One;
-}
-.navbar__brand-name{
-    color: var(--white);
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    font-size: 3rem;
-}
-
-.navbar__list-item {
-    margin-top: 2rem;
-  font-size: 26px;
-  line-height: 38px;
-  display: flex;
-  float: right;
-  padding-left: 3rem;
-  color: var(--white);
-}
-
-.section-one {
-    display: flex;
-}
-
-.section-one__details {
-    position: absolute;
-    top: 379px;
-    left: 146px;
-    width: 630px;
-    height: 399px;
-    color: var(--white);
-    letter-spacing: 0.05em;
-}
-
-.hook__title {
-    font-family: secular One;
-    font-size: 80px;
-    line-height: 116px;
-  -webkit-text-stroke: 0.1vh var(--white);
-    color: var(--default-purple);
-}
-
-.hook-sub__title {
-    font-size: 80px;
-    line-height: 116px;
-}
-
-.hook-sub__title__des {
-    font-size: 50px;
-    line-height: 73px;
-}
-
-.section-one__btn {
-    font-size: 20px;
-    margin-top: 2rem;
-    padding: .5rem 1rem;
-    line-height: 44px;
-    align-items: center;
-    text-align: center;
-    background: var(--default-purple);
-    border: 1px solid var(--white);
-    color: var(--white);
-}
-
-.section-one__btn:hover {
-    box-shadow: 5px 5px var(--white);
-    border: none;
-}
-.section-one__img {
-    position: absolute;
-width: 851px;
-height: 828px;
-left: 722px;
-top: 196px;
-}
-*/
